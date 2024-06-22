@@ -3,9 +3,27 @@
     <title>
       calculator
     </title>
-  </svelte:head>  
-  <div class="bg-white h-[30rem] w-[20rem] rounded-3xl flex 
-  justify-center items-start pt-2">
-    <div class=" bg-[#2088fe] h-[3rem] w-[19rem]  rounded-3xl ">
-    </div>
-  </div>
+  </svelte:head> 
+  <div class="bg-white fit-h-[30rem] fit-w-[20rem] rounded-3xl 
+  grid grid-cols-4 gap-1 pb-2 pl-3 pr-2 pt-3">
+<button>%</button>
+<button>√</button>
+<button>CE</button>
+<button>C</button>
+<button>7</button>
+<button>8</button>
+<button>9</button>
+<button>-</button>
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button>÷</button>
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>x</button>
+<button>.</button>
+<button>0</button>
+<button>=</button>
+<button>+</button>
+</div>

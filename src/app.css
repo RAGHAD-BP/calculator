@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+button{
+  @apply bg-[#d8ddf0] rounded-full h-16 w-16;  
+}
