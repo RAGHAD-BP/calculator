@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 button{
-  @apply bg-[#d8ddf0] rounded-full h-12 w-12 shadow-md text-[#717583];  
+  @apply bg-[#d8ddf0] rounded-full h-12 w-12 shadow-md text-[#717583] flex justify-center items-center;  
+}
+body{
+  font-family: "Playwrite NG Modern", cursive;
 }
