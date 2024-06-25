@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 button{
-  @apply bg-[#d8ddf0] rounded-full h-12 w-12 shadow-md text-[#717583] flex justify-center items-center;  
+  @apply bg-[#d8ddf0] rounded-full h-12 min-w-12 shadow-md text-[#717583] flex justify-center items-center hover:scale-95  focus:outline-gray-200 focus:ring focus:ring-gray-200 ;
 }
 body{
   font-family: "Playwrite NG Modern", cursive;
