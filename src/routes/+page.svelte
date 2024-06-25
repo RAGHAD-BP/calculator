@@ -22,7 +22,6 @@ equation=myspilt.join(" ");
     let value:string;
     let lw:string;
     let sr:number;
-    let button:button;
     function sqR(){
       const sr=Math.sqrt(eval(equation));
       equation=sr.toString();
