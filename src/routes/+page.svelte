@@ -35,8 +35,8 @@ equation=myspilt.join(" ");
       calculator
     </title>
   </svelte:head> 
-  <div class="bg-white  rounded-3xl grid grid-cols-4 gap-1 p-4 font-semibold text-xl shadow-2xl">
-  <div class="bg-[#3978ff] rounded-full flex justify-start items-start text-white col-span-4 h-12 flex items-center px-4 mb-2">
+  <div class="bg-white  rounded-3xl grid grid-cols-4 gap-1 p-4 font-semibold text-xl shadow-2xl max-w-[14.5rem] ">
+  <div class="bg-[#3978ff] rounded-xl flex justify-start items-start text-white col-span-4 min-h-12 flex items-center px-4 mb-2 break-all ">
   {equation}
   </div>
 <button on:click={()=>addtoEqution(" /100")} class="bg-[#f3f6fc]">%</button>
