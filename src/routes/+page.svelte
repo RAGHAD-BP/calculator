@@ -7,6 +7,7 @@
     import MN from "$lib/icons/multiplication.svelte";
     import PL from "$lib/icons/plus.svelte";
     import EQ from "$lib/icons/equal.svelte";
+    import { onMount } from "svelte";
     function addtoEqution(value:string){
       equation+=value;
     };
@@ -40,12 +41,23 @@ equation=myspilt.join(" ");
       }
     }
     function keydown(e:KeyboardEvent){
+      new Audio('/click.mp3').play();
      let button = document.getElementById(e.key);
       button?.click();
-      button.focus();
+      button?.focus();
       setTimeout(()=>{
-      document.activeElement?.blur();},100);
+        //@ts-ignore
+      document.activeElement?.blur();
+    }, 100);
     }
+    onMount(()=>{
+      let allButtons=document.getElementsByTagName('button');
+      for(let i=0;i,allButtons.length;i++){
+        allButtons[i].addEventListener('click',()=>{
+          new Audio('/click.mp3').play();
+        })
+      }
+    });
   </script>
   <svelte:head>
     <title>
